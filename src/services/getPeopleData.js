@@ -1,0 +1,17 @@
+import {GUIDE_IMG_EXTENSION, HTTPS, SWAPI_PEOPLE, SWAPI_ROOT, URL_IMG_PERSON} from "../constants/api";
+
+const getID = (url, category) => {
+    const id = url
+        .replace(HTTPS + SWAPI_ROOT + category, '')
+        .replace('/', '')
+        .replace('/', '');
+    return id;
+};
+
+export const getPeopleID = (url) => {
+    return getID(url, SWAPI_PEOPLE);
+};
+
+export const getPeopleImage = (id) => {
+    return `${URL_IMG_PERSON}/${id + GUIDE_IMG_EXTENSION}`;
+};
