@@ -5,8 +5,6 @@ import {API_PEOPLE} from "../../constants/api";
 import {getPeopleID, getPeopleImage} from "../../services/getPeopleData";
 import PeopleList from "../../components/PeoplePage/PeopleList";
 
-import styles from './PeoplePage.module.css';
-
 const PeoplePage = () => {
     const [people, setPeople] = useState(null);
 
