@@ -3,6 +3,7 @@ import {useEffect, useState} from "react";
 import {getAPIResource} from '../../utils/network'
 import {API_PEOPLE} from "../../constants/api";
 import {getPeopleID, getPeopleImage} from "../../services/getPeopleData";
+import PeopleList from "../../components/PeoplePage/PeopleList";
 
 import styles from './PeoplePage.module.css';
 
@@ -32,18 +33,7 @@ const PeoplePage = () => {
 
     return (
         <>
-            {people ? (
-                <ul>
-                    {people.map(({id, name, imageUrl}) => {
-                        return (<li key={id}>
-                            <img src={imageUrl} alt={name}/>
-                            <p>{name}</p>
-                        </li>)
-                    })}
-                </ul>
-            ) : (
-                <p>loading....</p>
-            )}
+            {people ? <PeopleList people={people}></PeopleList> : <p>loading....</p>}
         </>
     )
 }
