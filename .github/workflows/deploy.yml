@@ -21,4 +21,8 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-      - run: npm install react-scripts && npm run deploy
+      - run: |
+          git config --global user.email "ezhov.mail@yandex.ru"
+          git config --global user.name "RaEzhov"
+          npm install react-scripts
+          npm run deploy
