@@ -1,0 +1,10 @@
+.text {
+    color: var(--color-yellow);
+    text-align: center;
+    text-shadow: 0 0 2px var(--color-yellow);
+    line-height: 1.7;
+
+    -webkit-text-stroke-color: var(--color-yellow);
+    -webkit-text-stroke-width: .5px;
+    -webkit-text-fill-color: transparent;
+}

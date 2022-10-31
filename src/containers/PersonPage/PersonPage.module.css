@@ -1,0 +1,21 @@
+.wrapper {
+    --color-name: var(--color-violet);
+    margin-top: 45px;
+}
+
+.person__name {
+    padding: var(--spacing-small);
+    font-size: var(--font-size-subheader);
+    border-radius: var(--border-radius-small);
+    -moz-border-radius-bottomleft: 0;
+    font-weight: var(--font-bold);
+    background-color: var(--color-name);
+}
+
+.info__container {
+    border-radius: var(--border-radius-small);
+    display: flex;
+    flex-wrap: wrap;
+    padding: var(--spacing-medium);
+    border-left: 5px solid var(--color-name);
+}

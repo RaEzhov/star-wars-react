@@ -1,0 +1,14 @@
+.link {
+    margin: var(--spacing-small);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pageNumber {
+    font-size: var(--font-size-main);
+    font-family: var(--font-family-main);
+}

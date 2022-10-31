@@ -1,18 +1,26 @@
+import PropTypes from 'prop-types';
+import {Link} from "react-router-dom";
+
 import styles from './PeopleList.module.css';
+import {HTTP_PREFIX} from "../../../constants/addresses";
 
 const PeopleList = ({people}) => {
     return (
         <ul className={styles.list__container}>
             {people.map(({id, name, imageUrl}) => {
                 return (<li key={id} className={styles.list__item}>
-                    <a href='#'>
+                    <Link to={HTTP_PREFIX + `/people/${id}`}>
                         <img src={imageUrl} alt={name} className={styles.person__photo}/>
                         <p>{name}</p>
-                    </a>
+                    </Link>
                 </li>)
             })}
         </ul>
     )
+};
+
+PeopleList.propTypes = {
+    people: PropTypes.array
 };
 
 export default PeopleList;

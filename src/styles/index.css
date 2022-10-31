@@ -1,13 +1,77 @@
+:root {
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+    --color-yellow: #FFE81F;
+    --color-blue: #6A83FB;
+    --color-violet: #AE72C2;
+    --color-violet-semi-transparent: rgba(174, 114, 194, 0.8);
+
+    --spacing-extra-small: 5px;
+    --spacing-small: 10px;
+    --spacing-medium: 20px;
+    --spacing-large: 20px;
+
+    --margin-list: 7px;
+
+    --font-size-main: 16px;
+    --font-size-header: 26px;
+    --font-size-subheader: 18px;
+    --font-bold: 600;
+    --font-family-main: sans-serif;
+    --text-shadow-yellow:
+            0 0 2px var(--color-white),
+            0 0 40px var(--color-blue);
+    --text-shadow-blue:
+            0 0 2px var(--color-white),
+            0 0 2px var(--color-blue);
+
+    --border-radius-small: 3px;
+    --border-radius-medium: 15px;
+    --border-radius-large: 30px;
+
+    --transition: 0.3s;
+
+    --width-max: 1240px;
+
+
+    --theme-default-header: #CCCC46;
+    --theme-default-background-image: url(../static/bg.jpg);
+}
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    font-size: var(--font-size-main);
+
+    background-color: var(--color-black);
+    background-image: var(--theme-default-background-image);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-attachment: fixed;
+    color: var(--color-white);
+
+}
+
+img {
+    display: block;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.header__text {
+    color: var(--theme-default-header);
+    line-height: 1.7;
+    font-size: 26px;
+    text-shadow: 0 0 2px var(--color-black);
+    transition: color var(--transition);
 }
