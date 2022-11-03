@@ -1,9 +1,17 @@
+@font-face {
+    font-family: 'STARWARS';
+    font-style: normal;
+    font-weight: 400;
+    src: local('STARWARS'), url('../fonts/STARWARS.TTF') format('truetype');
+}
+
 :root {
     --color-white: #FFFFFF;
     --color-black: #000000;
     --color-yellow: #FFE81F;
     --color-blue: #6A83FB;
     --color-violet: #AE72C2;
+    --color-red: #F75D83;
     --color-violet-semi-transparent: rgba(174, 114, 194, 0.8);
 
     --spacing-extra-small: 5px;
@@ -18,9 +26,10 @@
     --font-size-subheader: 18px;
     --font-bold: 600;
     --font-family-main: sans-serif;
+    --font-family-star-wars: STARWARS;
     --text-shadow-yellow:
             0 0 2px var(--color-white),
-            0 0 40px var(--color-blue);
+            0 0 40px var(--color-yellow);
     --text-shadow-blue:
             0 0 2px var(--color-white),
             0 0 2px var(--color-blue);

@@ -6,6 +6,7 @@ import NotFoundPage from "../containers/NotFoundPage";
 
 import {HTTP_PREFIX} from "../constants/addresses";
 import PersonPage from "../containers/PersonPage";
+import EpisodeCrawl from "../components/EpisodeCrawl";
 
 const routesConfig = [
     {
@@ -19,6 +20,10 @@ const routesConfig = [
     {
         path: '/people/:id',
         element: <PersonPage/>
+    },
+    {
+        path: '/episode_crawl/:ep_id',
+        element: <EpisodeCrawl/>
     },
     {
         path: '/*',

@@ -11,11 +11,13 @@ import PersonInfo from "../../components/PersonPage/PersonInfo";
 
 import styles from './PersonPage.module.css';
 import PersonLinkBack from "../../components/PersonPage/PersonLinkBack";
+import PersonFilms from "../../components/PersonPage/PersonFilms";
 
 const PersonPage = ({setErrorAPI}) => {
     const [personName, setPersonName] = useState(null);
     const [personPhoto, setPersonPhoto] = useState(null);
     const [personInfo, setPersonInfo] = useState(null);
+    const [personFilms, setPersonFilms] = useState(null);
 
     const id = useParams().id;
     useEffect(() => {
@@ -33,6 +35,7 @@ const PersonPage = ({setErrorAPI}) => {
                     {title: 'Skin color', data: res.skin_color},
                     {title: 'Eye color', data: res.eye_color},
                 ]);
+                if (res.films.length) setPersonFilms(res.films);
             }
             setErrorAPI(!res);
         })();
@@ -46,7 +49,8 @@ const PersonPage = ({setErrorAPI}) => {
                 <span className={styles.person__name}>{personName}</span>
                 <div className={styles.info__container}>
                     <PersonPhoto personPhoto={personPhoto} personName={personName}/>
-                    <PersonInfo personInfo={personInfo}/>
+                    {personInfo && <PersonInfo personInfo={personInfo}/>}
+                    {personFilms && <PersonFilms personFilms={personFilms} />}
                 </div>
             </div>
         </>

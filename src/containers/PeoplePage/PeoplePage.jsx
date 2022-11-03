@@ -43,17 +43,17 @@ const PeoplePage = ({setErrorAPI}) => {
     };
 
     useEffect(() => {
-        getResource(API_PEOPLE + queryPage);
+        (async () => getResource(API_PEOPLE + queryPage))();
     }, []);
 
     return (
         <>
+            {people ? <PeopleList people={people}></PeopleList> : <p>loading....</p>}
             <PeopleNavigation
                 getResource={getResource}
                 prevPage={prevPage}
                 nextPage={nextPage}
                 counterPage={counterPage}/>
-            {people ? <PeopleList people={people}></PeopleList> : <p>loading....</p>}
         </>
     )
 };

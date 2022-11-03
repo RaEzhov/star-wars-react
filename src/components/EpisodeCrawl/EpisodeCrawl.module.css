@@ -1,0 +1,57 @@
+.wrapper {
+    color: var(--color-yellow);
+    font-family: var(--font-family-star-wars);
+
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+
+    text-align: center;
+
+    font-size: 80px;
+    position: absolute;
+    top: -3500px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    transform-origin: 50% 100%;
+    transform: perspective(300px) rotateX(20deg);
+}
+.wrapper:after {
+    position: absolute;
+    content: '';
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 50%;
+    background-image: linear-gradient(top, rgba(0,0,0,1) 0%, transparent 100%);
+}
+
+.wrapper > div {
+    position: absolute;
+    top: 90%;
+    animation: scroll 120s linear 0s infinite;
+}
+
+@keyframes scroll {
+    0% { top: 90%; }
+    100% { top: -100%; }
+}
+
+.main__text {
+    text-align: center;
+}
+
+@media screen and (max-width: 1500px) {
+    .wrapper {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .wrapper {
+        font-size: 20px;
+        transform: perspective(600px) rotateX(20deg);
+    }
+}
