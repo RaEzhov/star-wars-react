@@ -7,13 +7,37 @@ import PersonLinkBack from "../PersonPage/PersonLinkBack";
 
 const EpisodeCrawl = () => {
 
-    const id = useParams().ep_id;
+    const id = Number(useParams().ep_id);
+
+    let filmId;
+    switch (id) {
+        case 1:
+            filmId = 4;
+            break;
+        case 2:
+            filmId = 5;
+            break;
+        case 3:
+            filmId = 6;
+            break
+        case 4:
+            filmId = 1;
+            break;
+        case 5:
+            filmId = 2;
+            break;
+        case 6:
+            filmId = 3;
+            break;
+        default:
+            filmId = id;
+    }
 
     const [filmInfo, setFilmInfo] = useState(null);
 
     useEffect(() => {
         (async () => {
-            const response = await getAPIResource(HTTPS + SWAPI_ROOT + SWAPI_FILMS + (id + 3) % 6);
+            const response = await getAPIResource(HTTPS + SWAPI_ROOT + SWAPI_FILMS + filmId);
 
             const strings = response.opening_crawl.split(/\r\n\r\n/g);
             for (let i = 0; i < strings.length; i++) {
