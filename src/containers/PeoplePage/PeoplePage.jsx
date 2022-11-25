@@ -26,12 +26,12 @@ const PeoplePage = ({setErrorAPI}) => {
         if (res) {
             const peopleList = res.results.map(({name, url}) => {
                 const id = getPeopleID(url);
-                const imageUrl = getPeopleImage(id);
+                const img = getPeopleImage(id);
 
                 return {
                     id,
                     name,
-                    imageUrl
+                    img
                 }
             });
             setPeople(peopleList);
@@ -48,6 +48,7 @@ const PeoplePage = ({setErrorAPI}) => {
 
     return (
         <>
+            <h1 className="header__text">People</h1>
             {people ? <PeopleList people={people}></PeopleList> : <p>loading....</p>}
             <PeopleNavigation
                 getResource={getResource}

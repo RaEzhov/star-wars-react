@@ -5,6 +5,7 @@ import {HTTP_PREFIX} from "../../../constants/addresses";
 
 import styles from './PeopleNavigation.module.css';
 import UIButon from "../../UI/UIButton";
+import {useTheme} from "../../../context/ThemeProvider";
 
 const PeopleNavigation = ({
                               getResource,
@@ -18,11 +19,11 @@ const PeopleNavigation = ({
     return (
         <div className={styles.container}>
             <Link to={`${HTTP_PREFIX}/people/?page=${counterPage - 1}`} className={styles.link}>
-                <UIButon text={"Previous"} onClick={handleChangePrev} disabled={!prevPage} />
+                <UIButon theme={useTheme.theme} text={"Previous"} onClick={handleChangePrev} disabled={!prevPage} />
             </Link>
             <p className={styles.pageNumber}>{counterPage}</p>
             <Link to={`${HTTP_PREFIX}/people/?page=${counterPage + 1}`} className={styles.link}>
-                <UIButon text={"Next"} onClick={handleChangeNext} disabled={!nextPage}/>
+                <UIButon theme={useTheme().theme} text={"Next"} onClick={handleChangeNext} disabled={!nextPage}/>
             </Link>
         </div>
     )

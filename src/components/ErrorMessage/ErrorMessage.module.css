@@ -1,10 +1,10 @@
 .text {
-    color: var(--color-yellow);
+    color: var(--theme-accent);
     text-align: center;
-    text-shadow: 0 0 2px var(--color-yellow);
+    text-shadow: 0 0 1px var(--theme-accent);
     line-height: 1.7;
 
-    -webkit-text-stroke-color: var(--color-yellow);
+    -webkit-text-stroke-color: var(--theme-accent);
     -webkit-text-stroke-width: .5px;
     -webkit-text-fill-color: transparent;
 }

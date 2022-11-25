@@ -1,4 +1,7 @@
 .container {
+    position: relative;
+    top: 0;
+    left: 0;
     width: 250px;
     height: 350px;
 }
@@ -9,4 +12,15 @@
     border-radius: var(--border-radius-small);
     object-fit: cover;
     object-position: center center;
+}
+
+.favorite {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    position: absolute;
+    top: -25px;
+    right: -25px;
+    -webkit-filter: drop-shadow( 0px 0px 5px rgba(0, 0, 0, .7));
+    filter: drop-shadow( 0px 0px 5px rgba(0, 0, 0, .7));
 }

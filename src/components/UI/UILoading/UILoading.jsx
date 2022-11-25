@@ -3,20 +3,18 @@ import {useEffect, useState} from "react";
 import PropTypes from "prop-types";
 
 const UILoading = ({
-    color='white',
+    color='dark',
                    }) => {
     const [loaderIcon, setLoaderIcon] = useState('#FFFFFF');
 
     useEffect(() => {
         switch (color) {
-            case 'white':
+            case 'dark':
                 setLoaderIcon('#FFFFFF');
                 break;
-            case 'black':
+            case 'light':
                 setLoaderIcon('#000000');
                 break;
-            case 'violet':
-                setLoaderIcon('#AE72C2');
         }
     }, []);
 

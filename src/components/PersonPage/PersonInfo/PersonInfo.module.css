@@ -1,8 +1,8 @@
 .wrapper {
     width: 300px;
     padding: var(--spacing-medium);
-    margin-left: var(--spacing-large);
-    background-color: var(--color-violet-semi-transparent);
+    margin-left: calc(var(--spacing-large) * 2);
+    background-color: var(--theme-accent);
     border-radius: var(--border-radius-small);
 
 }
@@ -21,7 +21,7 @@
     display: flex;
     justify-content: space-between;
     padding: var(--spacing-extra-small);
-    border-bottom: 1px solid var(--color-white);
+    border-bottom: 1px solid var(--theme-color);
 }
 
 .item__title {

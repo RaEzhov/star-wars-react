@@ -46,7 +46,6 @@ const EpisodeCrawl = () => {
             response.opening_crawl = strings;
             setFilmInfo(response);
         })();
-
     }, []);
 
     return (

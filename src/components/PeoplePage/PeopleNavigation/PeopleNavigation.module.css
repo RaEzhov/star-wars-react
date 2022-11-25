@@ -1,5 +1,6 @@
 .link {
     margin: var(--spacing-small);
+    color: var(--theme-color);
 }
 
 .container {
@@ -11,4 +12,5 @@
 .pageNumber {
     font-size: var(--font-size-main);
     font-family: var(--font-family-main);
+    color: var(--theme-color);
 }

@@ -8,7 +8,7 @@
 :root {
     --color-white: #FFFFFF;
     --color-black: #000000;
-    --color-yellow: #FFE81F;
+    --color-yellow: #FFE12B;
     --color-blue: #6A83FB;
     --color-violet: #AE72C2;
     --color-red: #F75D83;
@@ -43,9 +43,27 @@
     --width-max: 1240px;
 
 
-    --theme-default-header: #CCCC46;
-    --theme-default-background-image: url(../static/bg.jpg);
+    /*THEMES*/
+    --theme-light-header: #FFE12B;
+    --theme-light-background: #FFFFFF;
+    --theme-light-background-color: var(--color-white);
+    --theme-light-color: var(--color-black);
+    --theme-light-accent: #FFE12B;
+    --theme-light-filter-arrow: invert(93%) sepia(76%) saturate(4984%) hue-rotate(329deg) brightness(103%) contrast(103%);
 
+    --theme-dark-header: #ED6C6F;
+    --theme-dark-background: url(../static/bg.jpg);
+    --theme-dark-background-color: var(--color-black);
+    --theme-dark-color: var(--color-white);
+    --theme-dark-accent: #ED6C6F;
+    --theme-dark-filter-arrow: invert(62%) sepia(12%) saturate(5162%) hue-rotate(312deg) brightness(87%) contrast(80%);
+
+    --theme-header: var(--theme-dark-header);
+    --theme-background: var(--theme-dark-background);
+    --theme-background-color: var(--theme-dark-background-color);
+    --theme-color: var(--theme-dark-color);
+    --theme-accent: var(--theme-dark-accent);
+    --theme-filter-arrow: var(--theme-dark-filter-arrow);
 }
 
 body {
@@ -59,13 +77,12 @@ body {
 
     font-size: var(--font-size-main);
 
-    background-color: var(--color-black);
-    background-image: var(--theme-default-background-image);
+    background: var(--theme-background);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top left;
     background-attachment: fixed;
-    color: var(--color-white);
+    color: var(--theme-color);
 
 }
 
@@ -79,9 +96,22 @@ code {
 }
 
 .header__text {
-    color: var(--theme-default-header);
+    color: var(--theme-header);
     line-height: 1.7;
     font-size: 26px;
-    text-shadow: 0 0 2px var(--color-black);
     transition: color var(--transition);
+}
+
+.item__light {
+    color: #29E52D;
+    text-shadow: 0 0 5px currentColor;
+}
+
+.item__light:hover, .item__dark:hover {
+    box-shadow: 0 0 20px currentColor;
+}
+
+.item__dark {
+    color: #D82228;
+    text-shadow: 0 0 5px currentColor;
 }

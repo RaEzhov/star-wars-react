@@ -20,7 +20,7 @@
     font-family: var(--font-family-star-wars);
     font-size: 18px;
     text-decoration: none;
-    color: var(--color-white);
+    color: var(--theme-color);
 
     transition: .2s;
 
@@ -29,8 +29,8 @@
 }
 
 .list__item a:hover {
-    border: 2px solid var(--color-violet);
-    color: var(--color-violet);
+    border: 2px solid var(--theme-accent);
+    color: var(--theme-accent);
     cursor: pointer;
 }
 

@@ -13,15 +13,15 @@
 .list__item {
     width: 200px;
     cursor: pointer;
-    box-shadow: 0 0 5px var(--color-white);
+    box-shadow: 0 0 5px var(--theme-color);
     border-radius: var(--border-radius-medium);
     transition:
             scale var(--transition),
             border-radius var(--transition),
             color var(--transition),
             box-shadow var(--transition);
-    color: var(--color-white);
-    background-color: var(--color-black);
+    color: var(--theme-color);
+    background-color: var(--theme-background-color);
 }
 
 .list__item a {
@@ -53,8 +53,8 @@
 .list__item:hover {
     scale: 1.1;
     border-radius: var(--border-radius-large);
-    box-shadow: 0 0 10px var(--color-yellow);
-    color: var(--color-yellow);
+    box-shadow: 0 0 10px var(--theme-accent);
+    color: var(--theme-accent);
 }
 
 .list__item:hover .person__photo {

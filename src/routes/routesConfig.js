@@ -7,6 +7,7 @@ import NotFoundPage from "../containers/NotFoundPage";
 import {HTTP_PREFIX} from "../constants/addresses";
 import PersonPage from "../containers/PersonPage";
 import EpisodeCrawl from "../components/EpisodeCrawl";
+import FavoritesPage from "../containers/FavoritesPage";
 
 const routesConfig = [
     {
@@ -24,6 +25,10 @@ const routesConfig = [
     {
         path: '/episode_crawl/:ep_id',
         element: <EpisodeCrawl/>
+    },
+    {
+        path: '/favorites',
+        element: <FavoritesPage />
     },
     {
         path: '/*',

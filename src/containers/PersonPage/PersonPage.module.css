@@ -1,5 +1,5 @@
 .wrapper {
-    --color-name: var(--color-violet);
+    --color-name: var(--theme-accent);
     margin-top: 45px;
 }
 

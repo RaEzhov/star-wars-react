@@ -7,10 +7,10 @@ import {HTTP_PREFIX} from "../../../constants/addresses";
 const PeopleList = ({people}) => {
     return (
         <ul className={styles.list__container}>
-            {people.map(({id, name, imageUrl}) => {
+            {people.map(({id, name, img}) => {
                 return (<li key={id} className={styles.list__item}>
                     <Link to={HTTP_PREFIX + `/people/${id}`}>
-                        <img src={imageUrl} alt={name} className={styles.person__photo}/>
+                        <img src={img} alt={name} className={styles.person__photo}/>
                         <p>{name}</p>
                     </Link>
                 </li>)

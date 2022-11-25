@@ -1,0 +1,26 @@
+.link {
+    position: relative;
+}
+
+.icon {
+    height: 35px;
+    width: 35px;
+    margin: 0;
+}
+
+.counter {
+    position: absolute;
+    background-color: var(--theme-accent);
+    color: var(--theme-color);
+    top: 5px;
+    right: 10px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    font-weight: var(--font-bold);
+
+    width: 25px;
+    height: 25px;
+}
