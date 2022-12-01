@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/star-wars-react/static/css/main.19d79544.css",
-    "main.js": "/star-wars-react/static/js/main.8c60f588.js",
+    "main.css": "/star-wars-react/static/css/main.9b649989.css",
+    "main.js": "/star-wars-react/static/js/main.2cfb770f.js",
     "static/css/895.b3248e80.chunk.css": "/star-wars-react/static/css/895.b3248e80.chunk.css",
     "static/js/895.8cb1686a.chunk.js": "/star-wars-react/static/js/895.8cb1686a.chunk.js",
     "static/media/bg.jpg": "/star-wars-react/static/media/bg.e4f06fdf152d0b2a2a09.jpg",
@@ -11,18 +11,19 @@
     "static/media/empire.svg": "/star-wars-react/static/media/empire.7548467a17f06326f03b3eae9a6a2c9c.svg",
     "static/media/inFavorite.svg": "/star-wars-react/static/media/inFavorite.66df89a97b9bb198f011f2a5718a9764.svg",
     "static/media/notInFavorite.svg": "/star-wars-react/static/media/notInFavorite.7e2eff3a8f8cbb949cf56f3dddc6b05e.svg",
+    "static/media/cross.svg": "/star-wars-react/static/media/cross.f7e1304339cf7c2b9b2d2a000193287a.svg",
     "static/media/favorites-black.svg": "/star-wars-react/static/media/favorites-black.cd377519ccb64f50eee4db334ab44cbc.svg",
     "static/media/favorites-white.svg": "/star-wars-react/static/media/favorites-white.781868b76f53fbda05ce6cc38b8f2210.svg",
     "index.html": "/star-wars-react/index.html",
     "static/media/rebel.svg": "/star-wars-react/static/media/rebel.813f310fdb1bac69f279d52ed59e1080.svg",
     "static/media/leftarrow.svg": "/star-wars-react/static/media/leftarrow.de790cb429ba29f990a24c56e6a779e1.svg",
-    "main.19d79544.css.map": "/star-wars-react/static/css/main.19d79544.css.map",
-    "main.8c60f588.js.map": "/star-wars-react/static/js/main.8c60f588.js.map",
+    "main.9b649989.css.map": "/star-wars-react/static/css/main.9b649989.css.map",
+    "main.2cfb770f.js.map": "/star-wars-react/static/js/main.2cfb770f.js.map",
     "895.b3248e80.chunk.css.map": "/star-wars-react/static/css/895.b3248e80.chunk.css.map",
     "895.8cb1686a.chunk.js.map": "/star-wars-react/static/js/895.8cb1686a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.19d79544.css",
-    "static/js/main.8c60f588.js"
+    "static/css/main.9b649989.css",
+    "static/js/main.2cfb770f.js"
   ]
 }
