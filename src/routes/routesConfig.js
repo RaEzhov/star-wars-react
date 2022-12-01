@@ -8,6 +8,8 @@ import {HTTP_PREFIX} from "../constants/addresses";
 import PersonPage from "../containers/PersonPage";
 import EpisodeCrawl from "../components/EpisodeCrawl";
 import FavoritesPage from "../containers/FavoritesPage";
+import SearchPage from "../containers/SearchPage";
+import ErrorMessage from "../components/ErrorMessage";
 
 const routesConfig = [
     {
@@ -29,6 +31,14 @@ const routesConfig = [
     {
         path: '/favorites',
         element: <FavoritesPage />
+    },
+    {
+        path: '/search',
+        element: <SearchPage />
+    },
+    {
+        path: '/fail',
+        element: <ErrorMessage />
     },
     {
         path: '/*',

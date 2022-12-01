@@ -29,6 +29,8 @@ const Header = () => {
             <ul className={styles.list__container}>
                 <li><NavLink to={HTTP_PREFIX + "/home"}>Home</NavLink></li>
                 <li><NavLink to={HTTP_PREFIX + "/people/?page=1"}>People</NavLink></li>
+                <li><NavLink to={HTTP_PREFIX + "/search"}>Search</NavLink></li>
+                <li><NavLink to={HTTP_PREFIX + "/fail"}>Fail</NavLink></li>
                 <li><NavLink to={HTTP_PREFIX + "/not-found"}>Not found</NavLink></li>
                 <li><Favorite/></li>
             </ul>

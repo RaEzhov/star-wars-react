@@ -66,6 +66,14 @@
     --theme-filter-arrow: var(--theme-dark-filter-arrow);
 }
 
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -114,4 +122,26 @@ code {
 .item__dark {
     color: #D82228;
     text-shadow: 0 0 5px currentColor;
+}
+/*******************************/
+/*********SCROLL****************/
+/*******************************/
+
+* {
+    scrollbar-color: var(--theme-accent) var(--theme-background-color);
+    scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--theme-accent);
+    border-radius: 2px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--theme-background-color);
 }
